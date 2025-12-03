@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dark theme colors -->
+    <color name="background_dark">#FF121212</color>
+    <color name="background_card">#FF1E1E1E</color>
+    <color name="text_primary">#FFFFFFFF</color>
+    <color name="text_secondary">#FFB0B0B0</color>
+    <color name="text_hint">#FF808080</color>
+    
+    <!-- Menu colors -->
+    <color name="menu_blue">#FF2196F3</color>
+    <color name="menu_green">#FF4CAF50</color>
+    <color name="menu_purple">#FF9C27B0</color>
+    <color name="menu_orange">#FFFF9800</color>
+    <color name="menu_red">#FFF44336</color>
+    
+    <!-- Border colors -->
+    <color name="border_gray">#FF424242</color>
+    <color name="border_light">#FF616161</color>
+    
+    <!-- File type colors -->
+    <color name="folder_color">#FFFFA726</color>
+    <color name="image_color">#FFE91E63</color>
+    <color name="document_color">#FF3F51B5</color>
+    <color name="audio_color">#FF009688</color>
+    <color name="video_color">#FFFF5722</color>
+    <color name="archive_color">#FF795548</color>
+    <color name="code_color">#FF673AB7</color>
+    
+    <!-- Status colors -->
+    <color name="success_green">#FF4CAF50</color>
+    <color name="error_red">#FFF44336</color>
+    <color name="warning_yellow">#FFFFC107</color>
+    
+    <!-- Selection colors -->
+    <color name="selection_blue">#1A2196F3</color>
+</resources>
