@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:padding="12dp">
+
+        <!-- Checkbox for selection -->
+        <CheckBox
+            android:id="@+id/cb_select"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="12dp"
+            android:visibility="gone"
+            app:buttonTint="@color/menu_blue" />
+
+        <!-- File Icon -->
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_toEndOf="@id/cb_select"
+            android:layout_centerVertical="true"
+            android:padding="4dp" />
+
+        <!-- Hidden File Indicator -->
+        <ImageView
+            android:id="@+id/iv_hidden"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_toEndOf="@id/iv_icon"
+            android:layout_alignTop="@id/iv_icon"
+            android:src="@drawable/ic_hidden"
+            android:visibility="gone"
+            android:tint="@color/text_secondary" />
+
+        <!-- Extension Badge -->
+        <TextView
+            android:id="@+id/tv_extension"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/iv_icon"
+            android:layout_below="@id/iv_hidden"
+            android:layout_marginStart="4dp"
+            android:paddingHorizontal="6dp"
+            android:paddingVertical="2dp"
+            android:textSize="10sp"
+            android:textColor="@color/text_primary"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:ellipsize="end" />
+
+        <!-- File Name -->
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/iv_icon"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="52dp"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            android:maxLines="1"
+            android:ellipsize="end" />
+
+        <!-- File Size -->
+        <TextView
+            android:id="@+id/tv_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/iv_icon"
+            android:layout_below="@id/tv_name"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp" />
+
+        <!-- Modification Date -->
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="8dp"
+            android:textColor="@color/text_hint"
+            android:textSize="11sp" />
+
+    </RelativeLayout>
+
+    <!-- Divider -->
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/border_gray" />
+
+</LinearLayout>
