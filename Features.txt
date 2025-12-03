@@ -59,3 +59,102 @@ FileManagerApp/
 │   └── build.gradle                       # Module build config
 ├── build.gradle                           # Project build config
 └── settings.gradle                        # Project settings
+
+
+FileManagerApp/
+├── app/
+│   ├── src/
+│   │   ├── main/
+│   │   │   ├── java/com/filemanager/
+│   │   │   │   ├── MainActivity.java                          ✅ 6.8 KB
+│   │   │   │   ├── FileBrowserActivity.java                   ✅ 12.7 KB
+│   │   │   │   ├── FileUtils.java                             ✅ 8.2 KB
+│   │   │   │   ├── FileTypeDetector.java                      ✅ 5.8 KB
+│   │   │   │   ├── SearchFunctionality.java                   ✅ 8.7 KB
+│   │   │   │   ├── SettingsActivity.java                      ✅ 9.3 KB
+│   │   │   │   ├── FileManagerApplication.java                ✅ 2.1 KB [ÚJ]
+│   │   │   │   ├── models/
+│   │   │   │   │   ├── FileItem.java                          ✅ 2.5 KB
+│   │   │   │   │   └── OperationResult.java                   ✅ 2.0 KB
+│   │   │   │   ├── adapters/
+│   │   │   │   │   └── FileListAdapter.java                   ✅ 7.3 KB
+│   │   │   │   ├── dialogs/
+│   │   │   │   │   ├── FileInfoDialog.java                    ✅ 6.5 KB
+│   │   │   │   │   ├── RenameDialog.java                      ✅ 4.2 KB
+│   │   │   │   │   ├── OperationDialog.java                   ✅ 5.8 KB
+│   │   │   │   │   └── SortDialog.java                        ✅ 6.2 KB
+│   │   │   │   ├── services/
+│   │   │   │   │   ├── FileOperationService.java              ✅ 12.3 KB
+│   │   │   │   │   └── StorageMonitorService.java             ✅ 4.8 KB
+│   │   │   │   └── receivers/
+│   │   │   │       └── StorageChangeReceiver.java             ❌ [ELTÁVOLÍTVA - StorageMonitorService kezeli]
+│   │   │   ├── res/
+│   │   │   │   ├── layout/
+│   │   │   │   │   ├── activity_main.xml                      ✅ 8.5 KB
+│   │   │   │   │   ├── activity_file_browser.xml              ✅ 12.3 KB
+│   │   │   │   │   ├── activity_settings.xml                  ✅ 6.3 KB [ÚJ]
+│   │   │   │   │   ├── file_item.xml                          ✅ 4.2 KB
+│   │   │   │   │   ├── storage_item.xml                       ✅ 3.8 KB
+│   │   │   │   │   ├── dialog_file_info.xml                   ✅ 7.8 KB
+│   │   │   │   │   ├── dialog_rename.xml                      ✅ 3.8 KB [ÚJ]
+│   │   │   │   │   ├── dialog_operation.xml                   ✅ 4.1 KB [ÚJ]
+│   │   │   │   │   └── dialog_sort.xml                        ✅ 3.5 KB [ÚJ]
+│   │   │   │   ├── drawable/
+│   │   │   │   │   ├── ic_folder.xml                          ✅ 2.1 KB
+│   │   │   │   │   ├── ic_file.xml                            ✅ 2.1 KB
+│   │   │   │   │   ├── ic_image.xml                           ✅ 2.1 KB
+│   │   │   │   │   ├── ic_document.xml                        ✅ 2.1 KB
+│   │   │   │   │   ├── ic_audio.xml                           ✅ 2.1 KB
+│   │   │   │   │   ├── ic_video.xml                           ✅ 2.1 KB
+│   │   │   │   │   ├── ic_archive.xml                         ✅ 2.1 KB
+│   │   │   │   │   ├── ic_copy.xml                            ✅ 1.8 KB
+│   │   │   │   │   ├── ic_move.xml                            ✅ 1.9 KB
+│   │   │   │   │   ├── ic_delete.xml                          ✅ 1.9 KB
+│   │   │   │   │   ├── ic_rename.xml                          ✅ 1.9 KB
+│   │   │   │   │   ├── ic_properties.xml                      ✅ 1.9 KB
+│   │   │   │   │   ├── ic_select.xml                          ✅ 1.8 KB
+│   │   │   │   │   ├── ic_deselect.xml                        ✅ 1.9 KB
+│   │   │   │   │   ├── ic_back.xml                            ✅ 1.8 KB
+│   │   │   │   │   ├── ic_home.xml                            ✅ 1.9 KB
+│   │   │   │   │   ├── ic_menu.xml                            ✅ 1.8 KB
+│   │   │   │   │   ├── ic_settings.xml                        ✅ 2.0 KB
+│   │   │   │   │   ├── ic_storage.xml                         ✅ 1.8 KB
+│   │   │   │   │   ├── ic_recent.xml                          ✅ 1.9 KB
+│   │   │   │   │   ├── ic_search.xml                          ✅ 1.8 KB
+│   │   │   │   │   ├── ic_refresh.xml                         ✅ 1.9 KB
+│   │   │   │   │   ├── ic_sd_card.xml                         ✅ 2.1 KB
+│   │   │   │   │   ├── ic_notification.xml                    ✅ 1.8 KB
+│   │   │   │   │   ├── ic_hidden.xml                          ✅ 1.8 KB [ÚJ]
+│   │   │   │   │   ├── ic_arrow_back.xml                      ✅ 1.8 KB [ÚJ]
+│   │   │   │   │   ├── rounded_menu_bottom.xml                ✅ 1.8 KB
+│   │   │   │   │   ├── bg_file_item.xml                       ✅ 1.2 KB
+│   │   │   │   │   ├── bg_extension_folder.xml                ✅ 0.8 KB [ÚJ]
+│   │   │   │   │   ├── bg_extension_default.xml               ✅ 0.8 KB [ÚJ]
+│   │   │   │   │   ├── bg_rounded_button.xml                  ✅ 1.2 KB [ÚJ]
+│   │   │   │   │   ├── bg_dialog.xml                          ✅ 1.2 KB [ÚJ]
+│   │   │   │   │   └── bg_edittext.xml                        ✅ 1.0 KB [ÚJ]
+│   │   │   │   ├── values/
+│   │   │   │   │   ├── colors.xml                             ✅ 1.2 KB
+│   │   │   │   │   ├── strings.xml                            ✅ 3.8 KB
+│   │   │   │   │   └── styles.xml                             ✅ 2.5 KB
+│   │   │   │   ├── xml/
+│   │   │   │   │   ├── network_security_config.xml            ✅ 1.2 KB
+│   │   │   │   │   ├── backup_rules.xml                       ✅ 1.0 KB
+│   │   │   │   │   └── file_paths.xml                         ✅ 0.8 KB [ÚJ]
+│   │   │   │   ├── menu/
+│   │   │   │   │   └── main_menu.xml                          ✅ 2.3 KB
+│   │   │   │   └── mipmap/                                    # [Alapértelmezett Android ikonok]
+│   │   │   └── AndroidManifest.xml                            ✅ 4.2 KB
+│   ├── build.gradle                                           ✅ 3.5 KB
+│   └── proguard-rules.pro                                     ✅ 2.8 KB [FRISSÍTVE]
+│
+├── gradle/
+│   └── wrapper/
+│       ├── gradle-wrapper.jar                                 ✅ 60 KB
+│       └── gradle-wrapper.properties                          ✅ 0.5 KB
+│
+├── build.gradle                                               ✅ 1.2 KB
+├── settings.gradle                                            ✅ 0.3 KB
+├── gradlew                                                    ✅ 5.2 KB
+├── gradlew.bat                                                ✅ 2.7 KB
+└── README.md                                                  ✅ 4.5 KB
