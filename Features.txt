@@ -1,0 +1,61 @@
+### 📁 File Management
+- ✅ **Full file system access** with Android 14+ permissions
+- ✅ **SD card/external storage support** with auto-detection
+- ✅ **File operations**: Copy, Move, Delete, Rename
+- ✅ **Batch operations** with progress tracking
+- ✅ **Hidden files visibility** with toggle option
+
+### 🎨 User Interface
+- ✅ **Dark theme** with white text (#FFFFFF) on black background (#121212)
+- ✅ **Rounded menus** (20dp radius) with color-coded icons
+- ✅ **File type icons** with extension badges
+- ✅ **File size display** in KB/MB/GB format
+- ✅ **Extension display** for all files
+
+### 🔧 Advanced Features
+- ✅ **Search functionality** with filters
+- ✅ **Multiple sort options** (name, size, date, type)
+- ✅ **Settings menu** with customization
+- ✅ **Properties dialog** with detailed file info
+- ✅ **Background services** for file operations
+
+### 🛡️ Security & Performance
+- ✅ **Android 14-16 compatibility**
+- ✅ **Samsung A35 5G optimization** (ARM64, Exynos 1380)
+- ✅ **ProGuard optimization** for release builds
+- ✅ **Unit & UI tests** included
+- ✅ **Network security configuration**
+
+
+Main Screen          File Browser         Settings
+┌─────────────┐┌─────────────┐     ┌─────────────┐
+│📁 Internal │     │ 📂 Documents│     │ ⚙ General   │
+│📀 SD Card  │     │ 📄 file.txt │     │ 🎨 Display  │
+│⏰ Recent    │     │ 🖼️ image.jpg│     │ 🔧 Advanced │
+│⚙ Settings  │     │ 🎵 audio.mp3│     └─────────────┘
+└─────────────┘└─────────────┘
+
+
+FileManagerApp/
+├── app/
+│   ├── src/main/java/com/filemanager/
+│   │   ├── MainActivity.java              # Main entry point
+│   │   ├── FileBrowserActivity.java       # File browser interface
+│   │   ├── FileUtils.java                 # File operations utility
+│   │   ├── FileTypeDetector.java          # File type and icon mapping
+│   │   ├── SearchFunctionality.java       # Search implementation
+│   │   ├── SettingsActivity.java          # Settings interface
+│   │   ├── FileManagerApplication.java    # Application class
+│   │   ├── models/                        # Data models
+│   │   ├── adapters/                      # RecyclerView adapters
+│   │   ├── dialogs/                       # Dialog fragments
+│   │   ├── services/                      # Background services
+│   │   └── receivers/                     # Broadcast receivers
+│   ├── src/main/res/                      # Resources
+│   │   ├── layout/                        # UI layouts
+│   │   ├── drawable/                      # Icons and graphics
+│   │   ├── values/                        # Strings, colors, styles
+│   │   └── xml/                           # Configuration files
+│   └── build.gradle                       # Module build config
+├── build.gradle                           # Project build config
+└── settings.gradle                        # Project settings
